@@ -38,7 +38,7 @@ jobs:
           tags: ghcr.io/yash-s01/book-management-api:${{ github.sha }}
           build-args: REACT_APP_BASE_URL=${{ secrets.REACT_APP_BASE_URL }}
 
-setup-and-deploy:
+  setup-and-deploy:
     needs: [setup-build-publish-deploy]
 
     name: Setup and Deploy
