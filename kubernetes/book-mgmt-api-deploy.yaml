@@ -34,3 +34,5 @@ spec:
                 name: database-config
           ports:
             - containerPort: 5000
+      imagePullSecrets:
+       - name: ghcr-secret
